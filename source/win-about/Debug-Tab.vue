@@ -14,17 +14,13 @@
         (architecture: {{ arch }})
       </li>
     </ul>
-    <h2>Build Dependencies</h2>
-    <p>
-      This build was compiled using:
-    </p>
     <ul>
-      <li>Node.js <strong>v{{ versions.node }}</strong></li>
-      <li>Electron <strong>v{{ versions.electron }}</strong></li>
-      <li>Chrome <strong>v{{ versions.chrome }}</strong></li>
-      <li>v8 engine <strong>v{{ versions.v8 }}</strong></li>
-      <li>Zlib <strong>v{{ versions.zlib }}</strong></li>
-      <li>OpenSSL <strong>v{{ versions.openssl }}</strong></li>
+      <li><a href="https://www.nodejs.org">Node.js</a> <strong>v{{ versions.node }}</strong></li>
+      <li><a href="https://www.electronjs.org">Electron</a> <strong>v{{ versions.electron }}</strong></li>
+      <li><a href="https://www.chromium.org/">Chromium</a> <strong>v{{ versions.chrome }}</strong></li>
+      <li><a href="https://www.v8.dev">V8</a> <strong>v{{ versions.v8 }}</strong></li>
+      <li><a href="https://www.zlib.net/">Zlib</a> <strong>v{{ versions.zlib }}</strong></li>
+      <li><a href="https://www.openssl.org/">OpenSSL</a> <strong>v{{ versions.openssl }}</strong></li>
     </ul>
     <h2>Helper programs</h2>
     <ul>
