@@ -352,16 +352,17 @@ module.exports = {
       config: {
         options: {
           name: 'zettlr',
-          bin: 'Zettlr', // See packagerConfig.name property,
+          bin: 'zettlr', // See packagerConfig.name property,
           categories: [ 'Office', 'Education', 'Science' ],
           section: 'editors',
           // size: 500, // NOTE: Estimate, need to refine
           description: 'Your one-stop publication workbench.',
           productDescription: 'Your one-stop publication workbench.',
+          productName: 'Zettlr',
           recommends: [ 'quarto', 'pandoc', 'texlive | texlive-base | texlive-full' ],
           genericName: 'Markdown Editor',
           // Electron forge recommends 512px
-          icon: './resources/icons/png/',
+          icon: './resources/icons/png/512x512.png',
           priority: 'optional',
           mimeType: [ 'text/markdown', 'application/x-tex', 'application/json', 'application/yaml' ],
           maintainer: 'Hendrik Erz',
@@ -374,7 +375,7 @@ module.exports = {
       config: {
         options: {
           name: 'zettlr',
-          bin: 'Zettlr', // See packagerConfig.name property,
+          bin: 'zettlr', // See packagerConfig.name property,
           categories: [ 'Office', 'Education', 'Science' ],
           description: 'Your one-stop publication workbench.',
           productDescription: 'Your one-stop publication workbench.',

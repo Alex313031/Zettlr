@@ -47,7 +47,10 @@ mac:
 win:
   target:
   - nsis
+  - zip
   artifactName: "Zettlr-${version}-${arch}.${ext}"
+  executableName: zettlr
+  publisherName: Alex313031
   icon: "./resources/icons/icon.ico"
 #
 # Generic Linux options
@@ -58,7 +61,8 @@ linux:
   - deb
   - zip
   artifactName: "Zettlr-${version}-${arch}.${ext}"
-  executableName: Zettlr
+  executableName: zettlr
+  maintainer: Alex313031
   synopsis: Markdown editor
   category: Office
   icon: "./resources/icons/png"
@@ -86,9 +90,10 @@ dmg:
 nsis:
   oneClick: false
   perMachine: false
+  deleteAppDataOnUninstall: false
   allowElevation: true
   allowToChangeInstallationDirectory: true
-  uninstallDisplayName: ${productName}
+  uninstallDisplayName: ${productName} ${version}
   installerHeader: "./resources/NSIS/NSISinstallerHeader.bmp"
   installerSidebar: "./resources/NSIS/NSISinstallerSidebar.bmp"
   license: ./LICENSE
