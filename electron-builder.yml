@@ -55,6 +55,8 @@ win:
 linux:
   target:
   - AppImage
+  - deb
+  - zip
   artifactName: "Zettlr-${version}-${arch}.${ext}"
   executableName: Zettlr
   synopsis: Markdown editor

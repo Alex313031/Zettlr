@@ -335,16 +335,16 @@ module.exports = {
     },
     // When building for production, turn off a few fuses that disable certain
     // debug controls of the app.
-    ...((process.env.NODE_ENV === 'production')
-      ? [new FusesPlugin({
-          version: FuseVersion.V1,
-          [FuseV1Options.RunAsNode]: false,
-          [FuseV1Options.EnableCookieEncryption]: true,
-          [FuseV1Options.EnableNodeOptionsEnvironmentVariable]: false,
-          [FuseV1Options.EnableNodeCliInspectArguments]: false,
-          [FuseV1Options.GrantFileProtocolExtraPrivileges]: true
-        })]
-      : [])
+    //...((process.env.NODE_ENV === 'production')
+      //? [new FusesPlugin({
+          //version: FuseVersion.V1,
+          //[FuseV1Options.RunAsNode]: false,
+          //[FuseV1Options.EnableCookieEncryption]: true,
+          //[FuseV1Options.EnableNodeOptionsEnvironmentVariable]: false,
+          //[FuseV1Options.EnableNodeCliInspectArguments]: false,
+          //[FuseV1Options.GrantFileProtocolExtraPrivileges]: true
+        //})]
+      //: [])
   ],
   makers: [
     {
